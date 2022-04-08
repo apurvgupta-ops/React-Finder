@@ -8,7 +8,7 @@ export const Header = ({ darkTheme, setDarkTheme }) => {
       <div className="flex justify-between items-center space-x-5 w-screen">
         <Link to="/">
           <p className="text-2xl bg-blue-500 rounded-lg px-4 text-white">
-            Finder
+            Finder🔎
           </p>
         </Link>
         <button
@@ -16,9 +16,10 @@ export const Header = ({ darkTheme, setDarkTheme }) => {
           onClick={() => setDarkTheme(!darkTheme)}
           className="bg-black text-white rounded-lg px-4 py-1 dark:bg-white dark:text-black"
         >
-          {darkTheme ? "Light" : "Dark"}
+          {darkTheme ? "💡Light" : "🌙Dark"}
         </button>
       </div>
+      <Search />
     </div>
   );
 };
